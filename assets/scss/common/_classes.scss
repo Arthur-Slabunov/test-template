@@ -1,18 +1,25 @@
-.btn{
-    width: 250px;
-    height: 60px;
-    background-color: rgba($color-light, 0.1);
-    border: 2px solid $color-light;
-    padding: 0.5em 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-transition: background-color 0.5s;
+  width: 250px;
+  height: 60px;
+  padding: 0.5em 1em;
 
-    &:hover,
-    &:focus {
-        background-color: $color-accent;
-    }
+  transition: background-color 0.5s;
+  letter-spacing: 0.1em;
+
+  border: 2px solid $color-light;
+  border-width: 2px;
+  border-style: solid;
+  background-color: rgba($color-light, 0.1);
+
+  font-size: large;
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+  }
 }
 

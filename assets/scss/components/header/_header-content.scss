@@ -1,21 +1,21 @@
 .header-content {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 
-    &__container {
-        @extend %container;
+  &__container {
+    @extend %container;
+  }
 
-    }
+  &__title {
+    margin: 0 0 53px;
 
-    &__title {
-        margin: 0 0 67px;
-        text-align: center;
-    }
+    text-align: center;
+  }
 
-&__actions{
+  &__actions {
     display: flex;
     justify-content: center;
-    gap: $gap;
-}
 
+    gap: $gap;
+  }
 }

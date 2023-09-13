@@ -1,32 +1,31 @@
-.header-navbar{
+.header-navbar {
+  &__btn {
+    display: none;
+  }
 
-    
-    &__btn{
-        display: none;
+  &__list {
+    display: grid;
+    justify-content: end;
+
+    width: 100%;
+
+    gap: $gap-x2;
+    grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
+    @include unlist(0 -10px 0 0);
+  }
+
+  &__link {
+    padding: $gap $gap-sm;
+
+    transition: color 0.25s;
+    letter-spacing: 0.09em;
+
+    font-size: 1.125rem;
+    line-height: 20px;
+
+    &:hover,
+    &focus {
+      color: $color-accent;
     }
-
-    &__list{
-        @include unlist;
-        display: grid;
-        width: 100%;
-        grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
-        justify-content: end;
-        gap: $gap;
-    }
-    &__item{
-    }
-    &__link{
-        padding: $gap $gap-sm;
-
-        font-size: 1.125rem;
-        letter-spacing: 0.1em;
-        line-height: 20px;
-
-transition: color 0.25s;
-
-        &:hover,
-        &focus {
-            color:$color-accent;
-        }
-    }
+  }
 }

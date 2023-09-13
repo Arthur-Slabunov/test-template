@@ -1,26 +1,30 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-html{
-    font-family: $font-main;
-    font-size: $font-size;
+html {
+  overflow-y: scroll;
+
+  font-family: $font-main;
+  font-size: $font-size;
 }
 
-body{
-color: $color-gray;
-
+body {
+  color: $color-gray;
 }
 
-h1{
-font-family: $font-header;
-font-size: 3.75rem;
-letter-spacing: 0.12em;
-font-weight: 300;
+h1 {
+  letter-spacing: 0.078em;
+
+  font-family: $font-header;
+  font-size: 3.75rem;
+  font-weight: 300;
+  line-height: 1.2em;
 }
 
-a{
-    text-decoration: none;
-    color: $color-light;
+a {
+  text-decoration: none;
+
+  color: $color-light;
 }
 
