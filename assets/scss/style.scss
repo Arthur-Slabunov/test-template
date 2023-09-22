@@ -1,5 +1,11 @@
 @use "../../libs/normalize.css/normalize.css";
 
-@use "common/";
+@use "presets";
 
-@use "components";
+@use "common";
+
+@use "components/header";
+
+@use "components/sections/skills";
+
+
