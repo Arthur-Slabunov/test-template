@@ -10,18 +10,15 @@
   }
 
   &__title {
-    
     text-align: center;
-    
-    @media (max-width: 992px){
-      margin: 0 0 53px;
-}
 
-    @media (max-width: 991.8px) and (min-width: 768px) {
+    @include lg-min {
+      margin: 0 0 53px;
+    }
+    @include lg-md {
       margin: 0 0 43px;
     }
-
-    @media (max-width: 767.08px) {
+    @include md {
       margin: 0 0 33px;
     }
   }
@@ -33,5 +30,9 @@
     justify-content: center;
 
     gap: $gap;
+    @include sm {
+      align-items: center;
+      flex-direction: column;
+    }
   }
 }
