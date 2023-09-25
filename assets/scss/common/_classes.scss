@@ -26,33 +26,36 @@
 }
 
 .btn--light {
-@include lg-min {
-  min-width: 250px;
-  min-height: 60px;
-  font-size: large;
-}
-@include lg-md {
-  min-width: 200px;
-  min-height: 50px;
-}
-@include md {
-  min-width: 170px;
-  min-height: 40px;
-}
-
   border-color: $color-light;
+
+  @include lg-min {
+    min-width: 250px;
+    min-height: 60px;
+
+    font-size: large;
+  }
+  @include lg-md {
+    min-width: 200px;
+    min-height: 50px;
+  }
+  @include md {
+    min-width: 170px;
+    min-height: 40px;
+  }
 }
 
 .btn--primary {
   min-height: 60px;
-  font-size: 1.125rem;
-  @include sm-min{
-    min-width: 350px;
-  }
-  @include sm{
-    min-width: 100%;
-  }
 
   border-color: $color-primary;
   background-color: rgba($color-primary, 0.8);
+
+  font-size: 1.125rem;
+
+  @include sm-min {
+    min-width: 350px;
+  }
+  @include sm {
+    min-width: 100%;
+  }
 }
