@@ -17,8 +17,6 @@
   border-color: $color-light;
   background-color: rgba($color-light, 0.1);
 
-
-
   &:hover,
   &:focus {
     background-color: $color-accent;
@@ -58,4 +56,13 @@
   @include sm {
     min-width: 100%;
   }
+}
+
+.input {
+  min-width: 420px;
+  min-height: 60px;
+  background-color: rgba($color-light, 0.051);
+  border-style: none;
+  border-bottom-style: groove;
+  border-color: $color-light;
 }
