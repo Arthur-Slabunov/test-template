@@ -74,18 +74,23 @@
     @include md-min {
       display: grid;
       justify-content: end;
+
       width: 100%;
+
       grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
       @include unlist(0 -20px 0 0);
     }
     @include md {
-      display: none;
       position: absolute;
       top: 100%;
       right: $gap;
+
+      display: none;
+
       text-align: right;
 
       background-color: rgba($color-gray-dark, 0.9);
+
       @include box-shadow;
       @include unlist;
     }
@@ -101,17 +106,19 @@
 
   &__link {
     display: block;
+
+    transition: color 0.25s;
+    letter-spacing: 0.09em;
+
+    font-size: 1.125rem;
+    line-height: 20px;
+
     @include md-min {
       padding: $gap $gap-sm;
     }
     @include md {
       padding: $gap-sm $gap;
     }
-    transition: color 0.25s;
-    letter-spacing: 0.09em;
-
-    font-size: 1.125rem;
-    line-height: 20px;
 
     &:hover,
     &focus {

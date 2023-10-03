@@ -9,10 +9,9 @@
   min-height: 50px;
 
   &__title {
-    z-index: 1;
-
     margin: 0;
 
+    @include visually-hidden;
     @include abs-position;
     @include md-min {
       font-size: 1.25rem;
@@ -37,10 +36,15 @@
 
     color: $color-light;
 
-    font-size: 1.12rem;
     font-weight: 700;
 
     @include abs-position;
+    @include md-min {
+      font-size: 1.25rem;
+    }
+    @include md {
+      font-size: 1.12rem;
+    }
   }
 
   &__image {

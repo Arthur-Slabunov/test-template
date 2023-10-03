@@ -1,7 +1,7 @@
 @use "../../../presets" as *;
 @use "../../../mixins" as *;
 @use "sass:math";
-$local-gap: math.div( 40px, 3) ;
+$local-gap: math.div(40px, 3);
 $local-height: 690px;
 
 .skills {
@@ -41,7 +41,7 @@ $local-height: 690px;
       grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
     }
 
-    @media (min-height: $local-height + 1) {
+    @media (min-height: ($local-height + 1)) {
       grid-auto-rows: calc(33.3333vh - #{$local-gap});
     }
     @media (max-height: $local-height) {
