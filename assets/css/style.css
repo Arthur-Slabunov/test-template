@@ -489,22 +489,12 @@ p {
 }
 .skill-item__title {
   position: absolute;
-  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
 
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-
-  width: 1px;
-  height: 1px;
   margin: 0;
-  margin: -1px;
-  padding: 0;
-
-  border: 0;
 }
 .skill-item__link {
   position: absolute;
@@ -1093,7 +1083,7 @@ p {
     font-size: 1.125rem;
   }
   .skill-item__link {
-    font-size: 1.12rem;
+    font-size: 1.125rem;
   }
   .about {
     padding-top: 60px;
